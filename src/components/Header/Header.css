@@ -23,6 +23,15 @@ ul {
 
 }
 
+body {
+    position: relative;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
 
 
 

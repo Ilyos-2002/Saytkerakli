@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import "./Header.css"
+import logomath from "./tuitmatlogo.jpg"
 
 
 
@@ -15,7 +16,7 @@ export function HeaderTop() {
                 Muhammad al-Xorazmiy nomidagi Toshkent Axborot Texnologiyalari Universiteti
                 <p>Oliy Matematika Kafedrasi</p>
             </span>
-            <Link to="/"><img src="https://picsum.photos/40" style={{ borderRadius: "50%", padding: "4px" }} width={43} height={43} alt="" />
+            <Link to="/"><img src={logomath} style={{ borderRadius: "50%" }} width={43} height={43} alt="" />
             </Link>
 
 
