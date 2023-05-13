@@ -8,3 +8,21 @@
 .mainTop {
     background-color: #E5E5E5;
 }
+
+.homeMidlleSection {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.homeMidlleSection :hover {
+
+    scale: 1.1;
+}
+
+.homeMidlleCard {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}

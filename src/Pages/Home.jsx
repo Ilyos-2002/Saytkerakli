@@ -5,7 +5,9 @@ export function Home() {
     return (
         <div>
             <Header />
-            <HomeMain />
+            <main>
+                <HomeMain />
+            </main>
         </div>
     )
 }

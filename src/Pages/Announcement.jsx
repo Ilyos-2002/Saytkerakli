@@ -1,10 +1,14 @@
 import { CardTeacher, Header } from "../components";
 
 
-export function Teacher() {
+export function Announcement() {
     return (
-        <div>
+        <div    >
             <Header />
+
+
+
+
         </div>
     )
 }

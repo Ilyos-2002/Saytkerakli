@@ -6,8 +6,10 @@ export function Header() {
     return (
         <header>
             <HeaderTop />
-            <HeaderMidleNavbar />
-            <HeaderBotoomNavbar />
+            <nav>
+                <HeaderMidleNavbar />
+                <HeaderBotoomNavbar />
+            </nav>
         </header>
     )
 }

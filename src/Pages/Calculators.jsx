@@ -1,9 +1,9 @@
 import { CardTeacher, Header } from "../components";
 
 
-export function Teacher() {
+export function Calculators() {
     return (
-        <div>
+        <div    >
             <Header />
         </div>
     )

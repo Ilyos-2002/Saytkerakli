@@ -1,9 +1,9 @@
 import { CardTeacher, Header } from "../components";
 
 
-export function Teacher() {
+export function Hamkorlar() {
     return (
-        <div>
+        <div    >
             <Header />
         </div>
     )
