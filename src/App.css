@@ -23,3 +23,7 @@ p {
   background-color: #fff;
 
 }
+
+.active {
+  background-color: #e7dcdc;
+}
