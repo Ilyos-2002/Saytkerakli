@@ -1,12 +1,15 @@
 .mainImg {
+    margin-top: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 15px;
 }
 
 .mainTop {
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
+
 }
 
 .homeMidlleSection {
@@ -16,7 +19,6 @@
 }
 
 .homeMidlleSection :hover {
-
     scale: 1.1;
 }
 

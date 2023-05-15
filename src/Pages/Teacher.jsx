@@ -5,6 +5,7 @@ export function Teacher() {
     return (
         <div>
             <Header />
+            <CardTeacher />
         </div>
     )
 }

@@ -10,7 +10,7 @@ export function HomeTop() {
         <div className=" mainTop">
             <div className="container">
                 <div className="mainImg">
-                    <img style={{ maxWidth: "100%", }} src={mainImg} alt="mainImg" />
+                    <img style={{ maxWidth: "100%", }} src={mainImg} width={847} height={564} alt="mainImg" />
                     <p>
                         Hozirda “Oliy matematika” kafedrasida katta pedagogik tajribaga, ilmiy salohiyatga ega bo‘lgan professor-o‘qituvchilardan: Professor: Abdullaev R.Z., Dotsentlar: R.R.Raxmatov, O.A. Islomova, Z.S. Chay,   K.A. Igamberdiyev, S.S.Sadaddinova, Mamatov A.E, Yaxshiboyev D, M.I.Oxunboyev, R.S.Xudazarov, N.Y.Jurayeva,  katta o‘qituvchilar:  Sh.E. Tadjibayeva, N.A. Raximova F.A, O.I. Abdug‘aniyeva, assistentlar: Sagdullayeva M.M Sh.M.Fayzullayev,   F.S.Abdullayeva, Nafasov A.Y, Raxmatova Z.A, Abdullayev O.K,  Eshmirzayev Sh.Sh,  Madatova Z.A, Sayfullayeva M.Z, Xurramov A.X kafedra mudiri dotsent O‘. Qalandarov rahbarligida ishlamoqdalar.
                     </p>

@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,13 +19,20 @@ p {
 }
 
 .container {
-  max-width: 1220px;
-  padding: 10px 20px;
+  max-width: 1260px;
+  padding: 0 10px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: rgb(241, 234, 241);
 
 }
 
 .active {
-  background-color: #e7dcdc;
+  /* background-color: #e7dcdc; */
+  padding: 4px 5px;
+  color: aquamarine;
+}
+
+body {
+  background-color: #E5E5E5;
+
 }
