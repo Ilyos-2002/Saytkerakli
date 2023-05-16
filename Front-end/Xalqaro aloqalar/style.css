@@ -500,19 +500,20 @@ a {
   color: black;
 }
 .main {
-  background-color: #b0e0e6;
+  position: relative;
+  align-items: center;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 .wrapper-full {
-  max-width: 1262px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
 }
 .wrapper {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -529,23 +530,13 @@ img {
   font-weight: bold;
   color: #00008b;
 }
-.aloqalar {
-  display: grid;
-  grid-template-rows: repeat(5, 75px);
-  row-gap: 10px;
-}
-.aloqalar-content {
-  display: grid;
-  grid-template-columns: 50px 500px;
-  column-gap: 100px;
-}
-.name_content {
-  padding-top: 10px;
+.title-h1 {
+  font-size: 50px;
 }
 /* places  */
 .places_cards {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 }
 .places_card {
@@ -594,6 +585,93 @@ img {
   z-index: 4;
 }
 .places_card-pic-lg {
-  height: 354px;
+  height: 400px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 420px) {
+  .wrapper-full {
+    max-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  .wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  body {
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 5px;
+    line-height: 0.6;
+    font-weight: normal;
+  }
+  .title-main {
+    margin-bottom: 10px;
+  }
+  .title {
+    margin-top: 8px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .title-pic {
+    font-weight: bold;
+    color: #00008b;
+  }
+  .places_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
+  .places_card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .places_card::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .places_card:hover .places_card-pic {
+    transform: scale(1.05);
+  }
+  .places_card-title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 13px;
+    z-index: 3;
+  }
+  .places_card-size-lg {
+    grid-column: span 3;
+  }
+  .places_card-pic {
+    width: 100%;
+    object-fit: cover;
+    transition: 1s all;
+  }
+  .places_card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+  }
+  .places_card-pic-lg {
+    height: 150px;
+    object-fit: cover;
+  }
 }
