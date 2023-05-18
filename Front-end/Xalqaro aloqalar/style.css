@@ -443,31 +443,6 @@ img {
 }
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-html {
-  box-sizing: border-box;
-}
-/* lato-900 - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 900;
   src: url("../fonts/lato-v23-latin-900.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
       url("../fonts/lato-v23-latin-900.woff") format("woff");
@@ -488,61 +463,172 @@ html {
 *::before {
   box-sizing: inherit;
 }
-body {
-  font-family: "Lato";
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: normal;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-.main {
-  position: relative;
-  align-items: center;
-}
 img {
   max-width: 100%;
   height: auto;
 }
-.wrapper-full {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 .wrapper {
-  max-width: 720px;
+  max-width: 1060px;
   margin: 0 auto;
   padding: 0 15px;
 }
-.title-main {
-  margin-bottom: 35px;
+.wrapper-full {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-.title {
-  margin-top: 15px;
-  font-size: 36px;
+.wrapper-full {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section_title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: #102746;
+  position: relative;
+  padding-bottom: 10px;
+}
+.section_title::after {
+  display: block;
+  content: "";
+  width: 310px;
+  height: 3px;
+  background-color: #006dfe;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.top {
+  margin-bottom: 86px;
+}
+.top_title {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: #fff;
+}
+.top_title_main {
+  background-color: #333;
+  margin-bottom: 54px;
+}
+.top_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 57px;
+}
+
+.top_card-pic {
+  position: relative;
+  margin-bottom: 45px;
+}
+.top_card {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 2px 20px rgba(18, 19, 24, 0.16);
 }
-.title-pic {
-  font-weight: bold;
-  color: #00008b;
+
+.top_card-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(21, 24, 36, 0.6);
+  padding: 16px 25px;
 }
-.title-h1 {
-  font-size: 50px;
+.top_card_title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0 auto 0 0;
 }
-/* places  */
+.top_card_likes {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-right: 20px;
+  background: url(/img/svg/heart.svg) no-repeat right;
+  margin-right: 14px;
+}
+.top_card_comments {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-right: 23px;
+  background: url(/img/svg/comment.svg) no-repeat right;
+}
+.top_card_subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #102746;
+  margin-bottom: 43px;
+  padding: 0 10px;
+}
+.top_card_btn {
+  text-decoration: none;
+  margin: auto 0 0 0;
+  width: 120px;
+  padding: 12px 19px;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  background-color: #1da1f2;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.top_card_btn:hover,
+.top_card_btn:focus,
+.top_card_btn:active {
+  background-color: #0a5bc4;
+}
+.wrapper-full_1 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 15px;
+}
+.top_cards_1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 57px;
+  height: 426.612px;
+}
+.top_card_1 {
+}
+/**/
+.second_header {
+  background: #212529;
+  border-radius: 20px;
+}
+.second_title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: white;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
 .places_cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-gap: 10px;
 }
 .places_card {
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
 }
 .places_card::after {
   display: block;
@@ -560,16 +646,13 @@ img {
 }
 .places_card-title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 60px;
   color: white;
   position: absolute;
   bottom: 27px;
   left: 29px;
   z-index: 3;
-}
-.places_card-size-lg {
-  grid-column: span 3;
 }
 .places_card-pic {
   width: 100%;
@@ -585,93 +668,6 @@ img {
   z-index: 4;
 }
 .places_card-pic-lg {
-  height: 400px;
+  height: 354px;
   object-fit: cover;
-}
-
-@media screen and (max-width: 420px) {
-  .wrapper-full {
-    max-width: 350px;
-    margin: 0 auto;
-    padding-bottom: 15px;
-  }
-  .wrapper {
-    max-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 15px;
-  }
-  body {
-    font-family: "Lato";
-    font-style: normal;
-    font-size: 5px;
-    line-height: 0.6;
-    font-weight: normal;
-  }
-  .title-main {
-    margin-bottom: 10px;
-  }
-  .title {
-    margin-top: 8px;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-  }
-  .title-pic {
-    font-weight: bold;
-    color: #00008b;
-  }
-  .places_cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
-  }
-  .places_card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-  }
-  .places_card::after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: rgba(21, 24, 36, 0.4);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
-  .places_card:hover .places_card-pic {
-    transform: scale(1.05);
-  }
-  .places_card-title {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 25px;
-    color: white;
-    position: absolute;
-    bottom: 10px;
-    left: 13px;
-    z-index: 3;
-  }
-  .places_card-size-lg {
-    grid-column: span 3;
-  }
-  .places_card-pic {
-    width: 100%;
-    object-fit: cover;
-    transition: 1s all;
-  }
-  .places_card-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-  }
-  .places_card-pic-lg {
-    height: 150px;
-    object-fit: cover;
-  }
 }
