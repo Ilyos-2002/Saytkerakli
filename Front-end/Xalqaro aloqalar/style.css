@@ -605,6 +605,9 @@ img {
 .top_card_1 {
 }
 /**/
+.second {
+  margin-bottom: 100px;
+}
 .second_header {
   background: #212529;
   border-radius: 20px;
@@ -646,8 +649,8 @@ img {
 }
 .places_card-title {
   font-weight: 700;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 20px;
+  line-height: 30px;
   color: white;
   position: absolute;
   bottom: 27px;
