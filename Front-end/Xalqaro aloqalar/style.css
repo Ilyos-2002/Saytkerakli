@@ -606,11 +606,14 @@ img {
 }
 /**/
 .second {
-  margin-bottom: 100px;
+  background-color: #212529;
+  padding-bottom: 10px;
+  border-radius: 10px;
 }
 .second_header {
   background: #212529;
   border-radius: 20px;
+  box-shadow: 0px 2px 20px rgb(255, 255, 255, 0.168);
 }
 .second_title {
   text-align: center;
@@ -627,11 +630,17 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-gap: 10px;
+  grid-gap: 15px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 20px rgba(255, 255, 255, 0.2);
+  padding: 50px 100px;
+  border-radius: 20px;
+  background-color: white;
 }
 .places_card {
   position: relative;
   overflow: hidden;
+  border-radius: 20px;
 }
 .places_card::after {
   display: block;
