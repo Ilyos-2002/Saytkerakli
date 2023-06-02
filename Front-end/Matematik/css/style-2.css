@@ -155,7 +155,7 @@ html {
   background: url(/img/svg/Shape.svg) no-repeat right center;
 }
 /* Benefits Styles end */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   .wrapper {
     max-width: 350px;
     margin: 0 auto;
