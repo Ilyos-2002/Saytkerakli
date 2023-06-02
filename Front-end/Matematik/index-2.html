@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style-2.css" />
-    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/basic.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <title>Matematik Paketlar</title>
   </head>
   <body>
@@ -13,66 +14,190 @@
     <main class="main">
       <section class="intro">
         <div class="wrapper">
-          <h1 class="intro_title">Matematik Paketlar</h1>
-          <img src="img/strelka.gif " alt="strelka" class="strelka">
+          <h1 class="intro_title wow slideInUp">Matematik Paketlar</h1>
+          <a href="#!" onclick="scrollToSection()" class="arrow">
+            <img src="img/Arrow-down.svg.png" alt="strelka" class="strelka" />
+            <img src="img/Arrow-down.svg.png" alt="strelka" class="strelka" />
+          </a>
         </div>
       </section>
       <!-- Intro start -->
       <!-- Benefits start -->
       <section class="benefits">
         <div class="benefits_wrap">
-          <h2 class="benefits_title">Matematik Paketlar</h2>
+          <h2 class="benefits_title">
+            Matematik <span class="paketlar">Paketlar</span>
+          </h2>
           <div class="benefit_cards">
             <div class="benefit_card">
-              <div class="benefit_card-pic">
+              <div
+                class="benefit_card-pic wow slideInLeft"
+                data-wow-duration="0.8s"
+              >
                 <img
-                  src="img/wolfram-alpha.png"
+                  src="img/wolfram.jpeg"
                   alt="Welcome to Odigo!"
                   class="benefit_card-thumb"
                 />
               </div>
-              <h3 class="benefits_card-title">
-                WolframAlpha</h3>
-              <p class="benefits_card-desc">
-                Jump off balcony, onto stranger's head. Chase ball of string
-                hide when guests come over.
+              <a href="#!" onclick="titleClick()">
+                <h3
+                  class="benefits_card-title wow zoomIn"
+                  data-wow-duration="0.9s"
+                  onclick="titleClick()"
+                >
+                  WolframAlpha
+                </h3>
+              </a>
+              <p class="benefits_card-desc wow zoomIn" data-wow-duration="1s">
+                matematika va fizikada juda murakkab tenglamalarni yechish
+                qobiliyati bilan mashhur. WolframAlpha Talabalar muhandislik
+                muammolarini hal qilish uchun hisob-kitoblarni bajarishlari
+                mumkin.
               </p>
-              <a href="#!" class="benefits_card-more">LEARN MORE</a>
             </div>
             <div class="benefit_card">
-              <div class="benefit_card-pic">
+              <div
+                class="benefit_card-pic wow slideInLeft"
+                data-wow-duration="1.2s"
+              >
+                <img
+                  src="img/Matlab1-1.webp"
+                  alt="Welcome to Odigo!"
+                  class="benefit_card-thumb"
+                />
+              </div>
+              <a href="#!">
+                <h3
+                  class="benefits_card-title wow zoomIn"
+                  data-wow-duration="1.3s"
+                  onclick="titleClick()"
+                >
+                  MATLAB
+                </h3>
+              </a>
+              <p class="benefits_card-desc wow zoomIn" data-wow-duration="1.4s">
+                vaqt sinovidan o'tgan matematik hisoblarni avtomatlashtirish
+                tizimlaridan biridir. U matritsaviy amallarni qo'llashga
+                asoslangan. Bu narsa tizimning nomi - MATrix LABoratory - da o'z
+                aksini topgan.
+              </p>
+            </div>
+            <div class="benefit_card">
+              <div
+                class="benefit_card-pic wow slideInLeft"
+                data-wow-duration="1.6s"
+              >
+                <img
+                  src="img/geogebra.jpg"
+                  alt="Welcome to Odigo!"
+                  class="benefit_card-thumb"
+                />
+              </div>
+              <a href="#!">
+                <h3
+                  class="benefits_card-title wow zoomIn"
+                  data-wow-duration="1.7s"
+                  onclick="titleClick()"
+                >
+                  GeoGebra
+                </h3>
+              </a>
+              <p class="benefits_card-desc wow zoomIn" data-wow-duration="1.8s">
+                ta'limning barcha darajalari uchun, jumladan, geometriya,
+                algebra, jadvallar, grafiklar, statistika va arifmetikani bir
+                to'plamda o'z ichiga olgan bepul platformalararo dinamik
+                matematik dasturdir.
+              </p>
+            </div>
+            <div class="benefit_card">
+              <div
+                class="benefit_card-pic wow slideInLeft"
+                data-wow-duration="2s"
+              >
+                <img
+                  src="img/Mathcad.jpg"
+                  alt="Welcome to Odigo!"
+                  class="benefit_card-thumb"
+                />
+              </div>
+              <a href="#!">
+                <h3
+                  class="benefits_card-title wow zoomIn"
+                  data-wow-duration="2.1"
+                  onclick="titleClick()"
+                >
+                  MATHCAD
+                </h3>
+              </a>
+              <p class="benefits_card-desc wow zoomIn" data-wow-duration="2.2s">
+                paketi dasturly vosita bo'lib, o'zgaruvchi va o'zgarmas
+                parametrli algebralk va differentsial tenglamalarni yechish,
+                funksiyalarni tahlil qilish va ularning ekstremuminl Izlash.
+              </p>
+            </div>
+            <div class="benefit_card">
+              <div
+                class="benefit_card-pic wow slideInLeft"
+                data-wow-duration="2.4s"
+              >
                 <img
                   src="img/2ssgwTNbiKA.jpg"
                   alt="Welcome to Odigo!"
                   class="benefit_card-thumb"
                 />
               </div>
-              <h3 class="benefits_card-title">
-                Maple</h3>
-              <p class="benefits_card-desc">
-                Jump off balcony, onto stranger's head. Chase ball of string
-                hide when guests come over.
+              <a href="#!">
+                <h3
+                  class="benefits_card-title wow zoomIn"
+                  data-wow-duration="2.5"
+                  onclick="titleClick()"
+                >
+                  MAPLE
+                </h3>
+              </a>
+              <p class="benefits_card-desc wow zoomIn" data-wow-duration="2.6">
+                bu kompyuterda analitik vasonli hisoblashlarni bajaruvchi, 2000
+                dan ko'proq komandalarni o'z ichiga olgan va algebra,
+                geometriya, differensial tenglamalar, fizika masalalarini dastur
+                tuzmasdan yechish imkoniyatini beruvchi matematik tizim.
               </p>
-              <a href="#!" class="benefits_card-more">LEARN MORE</a>
             </div>
             <div class="benefit_card">
-              <div class="benefit_card-pic">
+              <div
+                class="benefit_card-pic wow slideInLeft"
+                data-wow-duration="2.8s"
+              >
                 <img
                   src="img/photomath.jpg"
                   alt="Welcome to Odigo!"
                   class="benefit_card-thumb"
                 />
               </div>
-              <h3 class="benefits_card-title">PhotoMath</h3>
-              <p class="benefits_card-desc">
-                Jump off balcony, onto stranger's head. Chase ball of string
-                hide when guests come over.
+              <a href="#!">
+                <h3
+                  class="benefits_card-title wow zoomIn"
+                  data-wow-duration="2.9"
+                  onclick="titleClick()"
+                >
+                  PHOTOMATH
+                </h3>
+              </a>
+              <p class="benefits_card-desc wow zoomIn" data-wow-duration="3s">
+                bu matematikani o'rganish uchun 1-raqamli ilova; u mobil
+                qurilmangizdagi kamera yordamida bir zumda arifmetikadan tortib
+                hisoblashgacha bo'lgan o'qiy oladi va hal qiladi.
               </p>
-              <a href="#!" class="benefits_card-more">LEARN MORE</a>
             </div>
           </div>
         </div>
       </section>
       <!-- Benefits end -->
+    </main>
+    <script src="wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
